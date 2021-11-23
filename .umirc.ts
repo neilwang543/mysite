@@ -4,11 +4,10 @@ export default defineConfig({
   nodeModulesTransform: {
     type: 'none',
   },
-  exportStatic: {},
-  routes: [
-    { path: '/', component: '@/pages/index' },
-    { path: '/home', component: '@/pages/home/index' },
-    { path: '/transform', component: '@/pages/transformBase64/index' },
-  ],
+  exportStatic: {
+    htmlSuffix: true,
+    dynamicRoot: true,
+  },
+  routes: [{ path: '/', component: '@/pages/transformBase64/index' }],
   fastRefresh: {},
 })

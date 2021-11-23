@@ -1,6 +1,6 @@
 {
   "private": true,
-  "homepage": "https://neilwang543.github.io/mysite",
+  "homepage": "./dist",
   "scripts": {
     "start": "umi dev",
     "build": "umi build",
